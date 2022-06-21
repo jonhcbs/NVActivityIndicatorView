@@ -31,7 +31,7 @@ class NVActivityIndicatorAnimationGradientCircleStrokeSpin: NVActivityIndicatorA
             height: size.height
         )
 
-        let gradientRingLayer = NVGraintCircleLayer(frame: frame, fromColor: color, toColor: UIColor.white, linewidth: 4.0, toValue: 0.99)
+        let gradientRingLayer = NVGraintCircleLayer(frame: frame, fromColor: color, toColor: UIColor.white, linewidth: 5.0, toValue: 0.99)
 
         gradientRingLayer.add(groupAnimation, forKey: "animation")
         gradientRingLayer.frame = frame
