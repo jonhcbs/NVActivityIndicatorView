@@ -19,6 +19,8 @@
 		1F18370B248CF31500583430 /* NVActivityIndicatorPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183708248CF31500583430 /* NVActivityIndicatorPresenterTests.swift */; };
 		1F18370C248CF31500583430 /* NVActivityIndicatorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183709248CF31500583430 /* NVActivityIndicatorViewTests.swift */; };
 		1F18370D248CF31500583430 /* NVActivityIndicatorTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F18370A248CF31500583430 /* NVActivityIndicatorTypeTests.swift */; };
+		D2FCBECC2861942C001195FC /* NVActivityIndicatorAnimationGradientCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FCBECB2861942C001195FC /* NVActivityIndicatorAnimationGradientCircleStrokeSpin.swift */; };
+		D2FCBECF2861ACC3001195FC /* NVGraintCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FCBECE2861ACC3001195FC /* NVGraintCircleLayer.swift */; };
 		OBJ_102 /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* NVActivityIndicatorPresenter.swift */; };
 		OBJ_103 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* NVActivityIndicatorViewable.swift */; };
 		OBJ_105 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NVActivityIndicatorView::NVActivityIndicatorView::Product" /* NVActivityIndicatorView.framework */; };
@@ -116,6 +118,8 @@
 		1F183708248CF31500583430 /* NVActivityIndicatorPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorPresenterTests.swift; sourceTree = "<group>"; };
 		1F183709248CF31500583430 /* NVActivityIndicatorViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorViewTests.swift; sourceTree = "<group>"; };
 		1F18370A248CF31500583430 /* NVActivityIndicatorTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorTypeTests.swift; sourceTree = "<group>"; };
+		D2FCBECB2861942C001195FC /* NVActivityIndicatorAnimationGradientCircleStrokeSpin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationGradientCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		D2FCBECE2861ACC3001195FC /* NVGraintCircleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVGraintCircleLayer.swift; sourceTree = "<group>"; };
 		"NVActivityIndicatorView::NVActivityIndicatorView::Product" /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NVActivityIndicatorView::NVActivityIndicatorViewExtended::Product" /* NVActivityIndicatorViewExtended.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NVActivityIndicatorViewExtended.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 				OBJ_41 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
 				OBJ_42 /* NVActivityIndicatorAnimationSquareSpin.swift */,
 				OBJ_43 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				D2FCBECB2861942C001195FC /* NVActivityIndicatorAnimationGradientCircleStrokeSpin.swift */,
+				D2FCBECE2861ACC3001195FC /* NVGraintCircleLayer.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -538,11 +544,13 @@
 				OBJ_69 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
 				OBJ_70 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
 				OBJ_71 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				D2FCBECC2861942C001195FC /* NVActivityIndicatorAnimationGradientCircleStrokeSpin.swift in Sources */,
 				OBJ_72 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
 				OBJ_73 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
 				OBJ_74 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
 				OBJ_75 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
 				OBJ_76 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				D2FCBECF2861ACC3001195FC /* NVGraintCircleLayer.swift in Sources */,
 				OBJ_77 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
 				OBJ_78 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
 				OBJ_79 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,

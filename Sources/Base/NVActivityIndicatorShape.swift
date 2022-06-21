@@ -39,7 +39,7 @@ enum NVActivityIndicatorShape {
     case triangle
     case line
     case pacman
-    case stroke
+    case stroke(lineWidth: CGFloat)
 
     // swiftlint:disable:next cyclomatic_complexity function_body_length
     func layerWith(size: CGSize, color: UIColor) -> CALayer {
@@ -144,7 +144,7 @@ enum NVActivityIndicatorShape {
             layer.fillColor = nil
             layer.strokeColor = color.cgColor
             layer.lineWidth = size.width / 2
-        case .stroke:
+        case .stroke(let lineWidth):
             path.addArc(withCenter: CGPoint(x: size.width / 2, y: size.height / 2),
                         radius: size.width / 2,
                         startAngle: -(.pi / 2),
@@ -152,7 +152,7 @@ enum NVActivityIndicatorShape {
                         clockwise: true)
             layer.fillColor = nil
             layer.strokeColor = color.cgColor
-            layer.lineWidth = 2
+            layer.lineWidth = lineWidth
         }
 
         layer.backgroundColor = nil
