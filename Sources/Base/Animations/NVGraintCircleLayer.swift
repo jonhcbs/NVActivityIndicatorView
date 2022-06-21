@@ -45,8 +45,8 @@ class NVGraintCircleLayer: CALayer {
             shapelayer.lineWidth = linewidth
             shapelayer.lineCap = CAShapeLayerLineCap.round
             shapelayer.strokeStart = 0.010
-            let finalValue = (toValue*0.99)
-            shapelayer.strokeEnd = finalValue//0.99;
+            let finalValue = (toValue * 0.99)
+            shapelayer.strokeEnd = finalValue //0.99;
             self.mask = shapelayer
         }
     }
