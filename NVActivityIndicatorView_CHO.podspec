@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'NVActivityIndicatorView_CHO'
-  s.version           = '0.1.3'
+  s.version           = '0.1.4'
   s.summary           = 'A collection of awesome loading animations'
   s.homepage          = 'https://github.com/maojoh/NVActivityIndicatorView'
   s.screenshot        = 'https://raw.githubusercontent.com/maojoh/NVActivityIndicatorView/master/Demo.gif'
