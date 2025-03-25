@@ -372,6 +372,9 @@ public final class NVActivityIndicatorView: UIView {
 
     /// Default color of activity indicator. Default value is UIColor.white.
     public static var DEFAULT_COLOR = UIColor.white
+    
+    /// Default stroke width of activity indicator. Default value is 5
+    public static var DEFAULT_STROKE_WIDTH: CGFloat = 5.0
 
     /// Default color of text. Default value is UIColor.white.
     public static var DEFAULT_TEXT_COLOR = UIColor.white
@@ -443,6 +446,9 @@ public final class NVActivityIndicatorView: UIView {
 
     /// Color of activity indicator view.
     @IBInspectable public var color: UIColor = NVActivityIndicatorView.DEFAULT_COLOR
+    
+    /// Stoke width of activity indicator view.
+    @IBInspectable public var stokeWidth: CGFloat = NVActivityIndicatorView.DEFAULT_STROKE_WIDTH
 
     /// Padding of activity indicator view.
     @IBInspectable public var padding: CGFloat = NVActivityIndicatorView.DEFAULT_PADDING
@@ -561,7 +567,8 @@ public final class NVActivityIndicatorView: UIView {
 
         layer.sublayers = nil
         animationRect.size = CGSize(width: minEdge, height: minEdge)
-        animation.setUpAnimation(in: layer, size: animationRect.size, color: color)
+        let style = NVActivityIndicatorStyle(color: color, strokeWidth: stokeWidth)
+        animation.setUpAnimation(in: layer, size: animationRect.size, style: style)
     }
 }
 #endif

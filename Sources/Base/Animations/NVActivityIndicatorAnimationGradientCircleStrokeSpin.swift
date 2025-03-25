@@ -10,7 +10,7 @@ import UIKit
 
 class NVActivityIndicatorAnimationGradientCircleStrokeSpin: NVActivityIndicatorAnimationDelegate {
 
-    func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
+    func setUpAnimation(in layer: CALayer, size: CGSize, style: NVActivityIndicatorStyle) {
         let duration: Double = 1.0
 
         let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
@@ -31,7 +31,7 @@ class NVActivityIndicatorAnimationGradientCircleStrokeSpin: NVActivityIndicatorA
             height: size.height
         )
 
-        let gradientRingLayer = NVGraintCircleLayer(frame: frame, fromColor: color, toColor: UIColor.white, linewidth: 5.0, toValue: 0.9)
+        let gradientRingLayer = NVGraintCircleLayer(frame: frame, fromColor: style.color, toColor: UIColor.white, linewidth: style.strokeWidth ?? 5.0, toValue: 0.9)
 
         gradientRingLayer.add(groupAnimation, forKey: "animation")
         gradientRingLayer.frame = frame
