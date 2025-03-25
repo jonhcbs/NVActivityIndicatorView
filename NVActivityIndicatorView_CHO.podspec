@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.social_media_url  = 'http://twitter.com/ninjaprox'
   s.documentation_url = 'https://nvactivityindicatorview.vinhis.me'
 
-  s.ios.deployment_target  = '9.0'
-  s.tvos.deployment_target = '9.0'
+  s.ios.deployment_target  = '12.0'
+  s.tvos.deployment_target = '12.0'
   s.swift_version          = '5.0'
 
   s.source = { git: 'https://github.com/maojoh/NVActivityIndicatorView.git',
